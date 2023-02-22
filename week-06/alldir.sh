@@ -1,0 +1,1 @@
+find /etc -type d

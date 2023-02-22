@@ -1,0 +1,1 @@
+wget -q -O - https://www.rte.ie/news | grep $1
