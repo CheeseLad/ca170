@@ -1,0 +1,543 @@
+
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> Einstein - cweb2 </title>
+
+<link rel="stylesheet" type="text/css" href="./Einstein - cweb2_files/main.css">
+ <link rel="icon" href="https://humphryscomputing.com/favicon.ico"> </head>
+
+<body>
+
+<script src="./Einstein - cweb2_files/jquery.min.js(1).download"></script>
+<script src="./Einstein - cweb2_files/header.js.download"></script>
+
+
+
+
+
+
+
+<!-- 
+Header with Three.js show
+For most normal pages
+--> 
+
+
+
+
+<!-- 
+three.js for header show
+--> 
+
+<script src="./Einstein - cweb2_files/r80.three.min.js(1).download"></script>  
+
+
+
+ 
+
+
+<div id="headerbox">
+
+<center>
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tbody><tr>
+<td valign="center">
+
+
+<center>
+
+ <font size="+3"><b>
+
+<a href="https://humphryscomputing.com/" style="text-decoration:none">
+<font color="black">Dr. Mark Humphrys</font>
+</a>
+
+ </b></font>
+
+<p>
+
+School of Computing.
+Dublin City University.
+</p><p>
+
+
+<a class="main-navigation" href="https://humphryscomputing.com/">Home</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<a class="main-navigation" href="https://humphryscomputing.com/blog.html">Blog</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a class="main-navigation" href="https://humphryscomputing.com/teaching.html">Teaching</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a class="main-navigation" href="https://humphryscomputing.com/research.html">Research</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a class="main-navigation" href="https://humphryscomputing.com/contact.html">Contact</a>
+  
+</p><p>
+
+  Online coding site: 
+<a href="https://ancientbrain.com/"><img style="border:none; vertical-align: middle;" width="30" src="./Einstein - cweb2_files/ab.logo.png"></a> 
+
+<a class="main-navigation" href="https://ancientbrain.com/">Ancient Brain</a>
+</p><p>
+
+
+
+
+
+<!--
+Live remote stats  
+-->
+
+<script src="./Einstein - cweb2_files/feed.nousers.js.download"></script>1,927 
+coders  
+
+&nbsp;
+
+<script src="./Einstein - cweb2_files/feed.noworlds.js.download"></script>7,570 
+JavaScript worlds
+
+
+
+
+
+</p></center>
+
+</td>
+
+
+
+
+
+
+
+<td valign="top">
+
+<center>
+
+ 
+<!--
+
+ title="Tiled floor at my great-granduncle's pub (now 'The Oak'), Dame St, Dublin"
+
+<A  HREF=https://humphryscomputing.com/><img style=border:none   width=150   src="https://humphryscomputing.com/Icons/logo.1.jpg"></A>
+
+-->
+
+
+  <div id="headershowdiv">
+    <canvas width="125" height="125" style="width: 125px; height: 125px;"></canvas></div>
+  
+<script src="./Einstein - cweb2_files/header.show.js.download"></script>
+
+</center>
+
+</td>
+
+
+
+
+
+
+<td valign="center">
+<center>
+
+
+
+<form method="GET" action="https://humphryscomputing.com/search.php">  
+Search: 
+ <input size="20" name="q"> 
+ <input type="submit" value="Search"> 
+</form> 
+
+
+<p>
+
+
+<a class="main-navigation" href="https://humphryscomputing.com/ca170/">CA170</a>   &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="main-navigation" href="https://humphryscomputing.com/ca318/">CA318</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="main-navigation" href="https://humphryscomputing.com/ca686/">CA686</a>   &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="main-navigation" href="https://humphryscomputing.com/ca686i/">CA686I</a> 
+</p><p>
+
+<a class="main-navigation" href="https://humphryscomputing.com/courses/ai.html">Online AI coding exercises</a>
+</p><p>
+ 
+<a class="main-navigation" href="https://humphryscomputing.com/projects.html">Project ideas</a>
+
+
+
+</p></center>
+
+</td>
+
+
+</tr></tbody></table>
+
+</center>
+
+</div>
+
+
+ 
+
+
+
+
+<div class="NOPRINT">
+
+
+
+<style>
+
+#ancientbrain-div {		
+
+/* div on page to go below header box 			*/
+/* styled to exactly match and line up with header box 	*/
+
+ 	background: rgba(238, 255, 255, 1.0);
+ 	color: black;
+	text-align: center;	/* center content */ 
+
+	max-width: 1510px;	/* to match header box 1500 plus padding 5 */ 
+   	padding: 0;
+
+  	margin: 20 auto 10 auto;                         /* top right bottom left */		  
+   	border: 2px solid black ;		
+}
+
+
+#ancientbrain-iframe {		/* iframe fills div */
+
+ 	width: 	900 ; 		/* default, later set by JS */
+	height:	200 ;	 		 
+
+	margin: auto; 		/* center iframe */
+
+	border: none;
+   /*	border: 2px solid black ; */
+}
+
+</style>
+
+  
+<div id="ancientbrain-div">
+<iframe id="ancientbrain-iframe" scrolling="no" src="./Einstein - cweb2_files/ad.html" style="width: 1510px; height: 200px;"></iframe>
+</div>
+ 
+
+
+<script>
+
+// optional dimensions tweaking
+// width and height of iframe are fairly flexible 
+// height should be at most width/4 (height can be less than that)
+
+function ancientbrain_setDimensions()
+{
+	var iframe 	= document.getElementById('ancientbrain-iframe');
+	var parent 	= iframe.parentElement;
+	var w		= parent.clientWidth;
+
+ 	iframe.style.width  = w ;		// fills div  
+
+	if ( w > 1000 ) iframe.style.height = 200 ;		// max-height 200 
+	else		iframe.style.height = w * 0.2 ;	 	 
+}
+
+ancientbrain_setDimensions();
+
+window.addEventListener ( "resize", 		ancientbrain_setDimensions );
+window.addEventListener ( "orientationchange",	ancientbrain_setDimensions );
+
+</script>
+
+
+
+
+
+
+
+</div>
+
+ 
+
+
+
+<div id="boxinpage">
+
+
+
+<br>
+
+
+
+
+ 
+
+
+
+<h1> Einstein - cweb2 </h1>
+ 
+
+  
+We will get a script called 
+"cweb2" working.
+
+This script  goes through your web pages, changing one string to another string.
+
+<br>
+Usage like:
+<pre>cweb2 newstring oldstring file.html
+cweb2 newstring oldstring *html
+</pre>
+<p>
+
+</p><pre>
+</pre>
+<hr>
+
+
+<h2> Debug on student Linux, not on Einstein  </h2>
+
+
+You need to write and  debug 
+ the program  on your student  Linux  account first. <br>
+
+When it is working you can upload it to Einstein.
+<br>
+ Let me say that again:
+
+<ol>
+
+<li> <span style="font-weight: bold ; font-size: x-large;"> Debug  on student Linux.  </span>
+<p>
+</p></li><li> <span style="font-weight: bold ; font-size: x-large;">  Do <i>not </i>debug  on Einstein.</span>
+<p>
+</p></li></ol>
+
+
+<pre>
+</pre>
+ 
+
+<h2> Debug with these files </h2>
+
+ 
+ 
+<ol>
+<li> You   need some web pages to edit. I suggest you copy the  play Macbeth from me.
+
+ </li><li> To copy a directory on Linux:
+<pre> cp -r sourcedir destinationdir </pre>
+
+
+</li><li>  To copy Macbeth:  
+ <pre> cp -r /users/tutors/mhumphrysdculab/share/shakespeare/macbeth $HOME/macbeth </pre>  
+ 
+
+</li></ol>
+<pre>
+</pre>
+
+
+<h2> See how  "sed" works </h2>
+
+Before even writing the program, first  see how "sed" works:
+
+<ol>
+
+<li> "cd" into your macbeth directory.
+
+</li><li> Search for all occurrences of the string "Scotland":
+<pre> grep Scotland *html </pre>
+
+  </li><li> Change   "Scotland" to "Finland" in the output stream
+by <a href="https://humphryscomputing.com/Notes/UNIX/more.html#pipes.etc">piping </a> the output of grep into
+ <a href="https://humphryscomputing.com/Notes/UNIX/shell.utilities.html#sed">sed</a>:
+
+<pre> grep Scotland *html | sed -e "s|Scotland|Finland|g" </pre>
+
+</li><li> This changes the output stream on the command line. It does not change the files.
+</li></ol>
+
+
+<pre>
+</pre>
+<hr>
+
+<h2> Modify this script </h2>
+ 
+Copy the following into a file "cweb2" in your bin directory.
+
+<pre>
+</pre>
+
+<div style=" border: 1px solid black; padding: 20px; display: inline-block; "> 
+
+<pre> 
+# Read in the arguments:
+NEWSTRING=$1
+OLDSTRING=$2
+
+# the following gets rid of the first two arguments
+shift
+shift
+
+# from now on, "all arguments" means "all arguments from 3rd one on"
+# go through all arguments one by one:
+
+for file in $*
+do
+ echo "We need to change $OLDSTRING to $NEWSTRING in $file" 
+ ls -l $file 
+ echo 
+done
+
+</pre>
+        
+</div>
+ <p>
+</p>
+To test the above,
+ "cd" into your macbeth directory.
+<br>
+
+Test it  with:
+
+<pre>cweb2 Finland Scotland complete.html
+cweb2 Finland Scotland *html
+</pre>
+
+It should just do an "ls" of the files in question, and say what string needs to be changed to what.
+But not actually change anything.
+
+<pre>
+</pre>
+
+ 
+
+ 
+
+<h2> How to actually change the files  </h2>
+ 
+
+  Instead of doing an "ls" of the file $file:  
+<ol>
+  <li>  Print out the contents of the file    with "cat".  
+
+</li><li>  Send that via a pipe  to  "sed" (like above).
+</li><li> 
+Note  that "sed"  should change the old string to the new string, whatever they are. 
+It should <i>not </i> just be hardwired to change Scotland to Finland.
+
+  </li><li> <a href="https://humphryscomputing.com/Notes/UNIX/more.html#pipes.etc"> Redirect</a>  the output to a temporary file.
+</li><li> So  the line is:
+<pre> cat ... | sed ... &gt; tmpfile
+</pre>
+You fill in the dots. 
+   </li><li> Use "cp" to copy the temporary file back to the original file.
+</li></ol>
+<pre>
+</pre>
+
+<h2> Test with one file first </h2>
+
+
+<ol> 
+<li> Search for   occurrences of the string "Scotland" in one file:
+<pre>grep Scotland complete.html
+</pre>
+
+  </li><li> Change  all  occurrences of "Scotland" to "Finland":
+<pre>cweb2 Finland Scotland complete.html
+</pre>
+
+  </li><li> Search for   occurrences of  "Scotland". There should now be none.
+  </li><li> Search for   occurrences of  "Finland". There should be a few now. 
+
+  </li><li> Change all occurrences of    "Finland"  to "Scotland".
+  </li><li> Search for   occurrences of  "Scotland". They should be back now.
+  </li><li> Search for   occurrences of  "Finland". They should be gone now.  
+<p>
+
+</p></li></ol>
+
+
+<pre>
+</pre>
+
+<h2> Test with all files </h2>
+
+When it is working with one file, test with multiple files.
+<ol> 
+<li> Search for all occurrences of the string "Scotland" in all files:
+<pre>grep Scotland *html
+</pre>
+
+  </li><li> Change all occurrences of "Scotland" to "Finland":
+<pre>cweb2 Finland Scotland *html
+</pre>
+
+  </li><li> Search for all occurrences of  "Scotland".  
+  </li><li> Search for all occurrences of  "Finland".   
+
+  </li><li> Change all occurrences of    "Finland"  to "Scotland".
+  </li><li> Search for all occurrences of  "Scotland".
+  </li><li> Search for all occurrences of  "Finland".
+<p>
+
+</p></li></ol>
+
+
+<pre>
+</pre>
+<hr>
+
+<h2> Before upload to Einstein </h2>
+
+<ol>
+  <li> Rename it to cweb2.sh 
+ 
+</li></ol>
+ 
+
+<pre>
+
+</pre>
+<hr>
+
+<h1> This script is very useful </h1>
+
+Imagine using this script  to change one string to another in   1,000   web pages without having to open any editors
+(or indeed do any work).
+ 
+
+ 
+
+<pre>
+
+</pre>
+</div>
+
+
+ 
+
+
+
+
+<script src="./Einstein - cweb2_files/footer.js.download"></script>
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,126 @@
+
+
+// put a little show (a spinning sphere) in header, in:
+//  <div id="headershowdiv">
+
+
+
+var 	SPINSPEED;	
+
+function spinSlow() { SPINSPEED = 0.3; }
+
+function spinFast() { SPINSPEED = -1; }
+
+
+
+
+
+
+function Show() { 
+
+ var scene, camera, renderer, thesphere;
+
+ var 	clock = new THREE.Clock();
+		 
+ var SIZE = 125;
+
+
+
+
+function paintSphere()
+{ 
+ var url  =  "/Icons/logo.mul.2.jpg"	;
+
+		// "Humphrys" logo.
+		// Tiled floor at my great-granduncle's pub (now 'The Oak'), Dame St, Dublin.
+
+ var loader = new THREE.TextureLoader();
+ loader.load ( url, function ( thetexture ) {			 
+
+		thetexture.minFilter = THREE.LinearFilter;
+		thesphere.material = new THREE.MeshBasicMaterial( {  map: thetexture } );
+
+	} ); 
+}
+		// asynchronous file load   
+		// load ( url, onLoad, onProgress, onError )
+
+
+
+// public functions:
+
+this.initShow = function ()
+{ 
+ var w = SIZE ;
+ var h = SIZE ;
+
+   	scene = new THREE.Scene();
+    	camera = new THREE.PerspectiveCamera( 75, w / h, 1, 10000 );
+	camera.position.z = ( SIZE );
+  	scene.add(camera);
+
+   renderer = new THREE.WebGLRenderer();
+   renderer.setSize( w, h );
+   renderer.setClearColor ( 0x000000, 1 );			// black 
+
+  	var container = document.getElementById("headershowdiv");			// add to div in surrounding page 
+	container.appendChild( renderer.domElement );
+
+ 	
+var shape = new THREE.SphereGeometry( ( SIZE * 0.5 ), 20, 20 );	
+var material = new THREE.MeshBasicMaterial({ color: 0x000000  });		// invisible black default color, to prevent random initial color flashing 
+thesphere  = new THREE.Mesh( shape, material );
+scene.add(thesphere);
+
+	paintSphere(); 
+	spinSlow();
+};
+
+
+
+
+this.render = function ()
+{
+  var t = clock.getElapsedTime();  	// Get the seconds passed since the clock started.
+
+// rotation in x, y, z in radians 
+
+  thesphere.rotation.set ( (t * SPINSPEED ), (t * SPINSPEED ), (t * SPINSPEED ) );	  
+
+  camera.lookAt( scene.position );
+  renderer.render(scene, camera);
+};
+ 
+ 
+}
+
+
+
+
+
+
+
+// the main() function 
+ 
+
+ var s = new Show();
+
+ s.initShow();
+
+ setInterval ( s.render, 100 );
+
+
+// not working: 
+// document.getElementById("headershowdiv").onMouseOver = fn;
+
+// use addEventListener instead:
+
+	element = document.getElementById('headershowdiv');
+
+	element.addEventListener( "mouseover",   spinFast		);
+	element.addEventListener( "mouseout",    spinSlow		);
+
+
+
+
+ 

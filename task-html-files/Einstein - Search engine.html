@@ -1,0 +1,624 @@
+
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> Einstein - Search engine </title>
+
+<link rel="stylesheet" type="text/css" href="./Einstein - Search engine_files/main.css">
+ <link rel="icon" href="https://humphryscomputing.com/favicon.ico"> </head>
+
+<body>
+
+<script src="./Einstein - Search engine_files/jquery.min.js(1).download"></script>
+<script src="./Einstein - Search engine_files/header.js.download"></script>
+
+
+
+
+
+
+
+<!-- 
+Header with Three.js show
+For most normal pages
+--> 
+
+
+
+
+<!-- 
+three.js for header show
+--> 
+
+<script src="./Einstein - Search engine_files/r80.three.min.js(1).download"></script>  
+
+
+
+ 
+
+
+<div id="headerbox">
+
+<center>
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tbody><tr>
+<td valign="center">
+
+
+<center>
+
+ <font size="+3"><b>
+
+<a href="https://humphryscomputing.com/" style="text-decoration:none">
+<font color="black">Dr. Mark Humphrys</font>
+</a>
+
+ </b></font>
+
+<p>
+
+School of Computing.
+Dublin City University.
+</p><p>
+
+
+<a class="main-navigation" href="https://humphryscomputing.com/">Home</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<a class="main-navigation" href="https://humphryscomputing.com/blog.html">Blog</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a class="main-navigation" href="https://humphryscomputing.com/teaching.html">Teaching</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a class="main-navigation" href="https://humphryscomputing.com/research.html">Research</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a class="main-navigation" href="https://humphryscomputing.com/contact.html">Contact</a>
+  
+</p><p>
+
+  Online coding site: 
+<a href="https://ancientbrain.com/"><img style="border:none; vertical-align: middle;" width="30" src="./Einstein - Search engine_files/ab.logo.png"></a> 
+
+<a class="main-navigation" href="https://ancientbrain.com/">Ancient Brain</a>
+</p><p>
+
+
+
+
+
+<!--
+Live remote stats  
+-->
+
+<script src="./Einstein - Search engine_files/feed.nousers.js.download"></script>1,927 
+coders  
+
+&nbsp;
+
+<script src="./Einstein - Search engine_files/feed.noworlds.js.download"></script>7,570 
+JavaScript worlds
+
+
+
+
+
+</p></center>
+
+</td>
+
+
+
+
+
+
+
+<td valign="top">
+
+<center>
+
+ 
+<!--
+
+ title="Tiled floor at my great-granduncle's pub (now 'The Oak'), Dame St, Dublin"
+
+<A  HREF=https://humphryscomputing.com/><img style=border:none   width=150   src="https://humphryscomputing.com/Icons/logo.1.jpg"></A>
+
+-->
+
+
+  <div id="headershowdiv">
+    <canvas width="125" height="125" style="width: 125px; height: 125px;"></canvas></div>
+  
+<script src="./Einstein - Search engine_files/header.show.js.download"></script>
+
+</center>
+
+</td>
+
+
+
+
+
+
+<td valign="center">
+<center>
+
+
+
+<form method="GET" action="https://humphryscomputing.com/search.php">  
+Search: 
+ <input size="20" name="q"> 
+ <input type="submit" value="Search"> 
+</form> 
+
+
+<p>
+
+
+<a class="main-navigation" href="https://humphryscomputing.com/ca170/">CA170</a>   &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="main-navigation" href="https://humphryscomputing.com/ca318/">CA318</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="main-navigation" href="https://humphryscomputing.com/ca686/">CA686</a>   &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="main-navigation" href="https://humphryscomputing.com/ca686i/">CA686I</a> 
+</p><p>
+
+<a class="main-navigation" href="https://humphryscomputing.com/courses/ai.html">Online AI coding exercises</a>
+</p><p>
+ 
+<a class="main-navigation" href="https://humphryscomputing.com/projects.html">Project ideas</a>
+
+
+
+</p></center>
+
+</td>
+
+
+</tr></tbody></table>
+
+</center>
+
+</div>
+
+
+ 
+
+
+
+
+<div class="NOPRINT">
+
+
+
+<style>
+
+#ancientbrain-div {		
+
+/* div on page to go below header box 			*/
+/* styled to exactly match and line up with header box 	*/
+
+ 	background: rgba(238, 255, 255, 1.0);
+ 	color: black;
+	text-align: center;	/* center content */ 
+
+	max-width: 1510px;	/* to match header box 1500 plus padding 5 */ 
+   	padding: 0;
+
+  	margin: 20 auto 10 auto;                         /* top right bottom left */		  
+   	border: 2px solid black ;		
+}
+
+
+#ancientbrain-iframe {		/* iframe fills div */
+
+ 	width: 	900 ; 		/* default, later set by JS */
+	height:	200 ;	 		 
+
+	margin: auto; 		/* center iframe */
+
+	border: none;
+   /*	border: 2px solid black ; */
+}
+
+</style>
+
+  
+<div id="ancientbrain-div">
+<iframe id="ancientbrain-iframe" scrolling="no" src="./Einstein - Search engine_files/ad.html" style="width: 1510px; height: 200px;"></iframe>
+</div>
+ 
+
+
+<script>
+
+// optional dimensions tweaking
+// width and height of iframe are fairly flexible 
+// height should be at most width/4 (height can be less than that)
+
+function ancientbrain_setDimensions()
+{
+	var iframe 	= document.getElementById('ancientbrain-iframe');
+	var parent 	= iframe.parentElement;
+	var w		= parent.clientWidth;
+
+ 	iframe.style.width  = w ;		// fills div  
+
+	if ( w > 1000 ) iframe.style.height = 200 ;		// max-height 200 
+	else		iframe.style.height = w * 0.2 ;	 	 
+}
+
+ancientbrain_setDimensions();
+
+window.addEventListener ( "resize", 		ancientbrain_setDimensions );
+window.addEventListener ( "orientationchange",	ancientbrain_setDimensions );
+
+</script>
+
+
+
+
+
+
+
+</div>
+
+ 
+
+
+
+<div id="boxinpage">
+
+
+
+<br>
+
+ 
+
+
+ 
+
+
+
+<h1> Einstein - Search engine </h1>
+
+
+ 
+
+
+
+
+ 
+<ol>
+  <li> Write an <b>offline</b>
+search engine to search  
+<b>offline</b>
+    web pages in your file system,
+ and produce an <b>offline </b>
+output web page where you can click on links.
+
+  
+ 
+  
+ </li><li> You may not have web pages to search, so we will test it on my
+ <a href="https://humphryscomputing.com/Notes/UNIX/lab.intro.html#shakespeare">sample corpus of the works of Shakespeare</a>.
+ 
+
+
+
+</li><li> Call it <tt>gweb2</tt>. Usage like:
+
+<blockquote>
+<tt> gweb2 string   </tt>
+</blockquote>
+
+
+</li><li> It searches the  corpus for the  string.
+ 
+ 
+
+
+</li><li> It sends its   output into  an (offline) output web page in  your bin  directory called:
+
+<blockquote>
+ <tt>  gweb2.output.html </tt>
+</blockquote>
+
+
+
+
+ </li></ol>
+
+<pre>  
+</pre>
+
+
+<h3>
+
+<img style="border:none" src="./Einstein - Search engine_files/new.gif">
+Update:
+<br>
+So many people failed to see the "in  your bin  directory" part. 
+</h3>
+
+
+
+<pre>
+</pre>
+
+<h1> 40% </h1>
+
+
+Start with this skeleton script:
+
+<blockquote>
+
+<table bgcolor="white" border="1" bordercolor="black" cellpadding="20" cellspacing="0">
+<tbody><tr>
+<td>
+
+<pre>
+# send output to this file:
+
+exec &gt; (output file)
+
+
+cd /users/tutors/mhumphrysdculab/share/shakespeare 
+
+echo '&lt;pre&gt;'
+grep -i "$1"  */*html   
+echo '&lt;/pre&gt;'
+
+</pre>
+
+</td></tr></tbody></table>
+
+</blockquote>
+ 
+<ol>
+<li>
+You have to fill in the name of the output file! (Without brackets.)
+
+<p>
+
+</p></li><li>
+ Test that it works with a sample search, like:
+<pre> gweb2 france </pre>
+ 
+  </li></ol>
+<p>
+</p><pre>  
+</pre>
+<h1> Upload to Einstein </h1>
+
+
+Before upload  to Einstein we need to make changes:
+
+
+<ol>
+  <li>  
+ 
+ Change the Shakespeare directory to:
+<pre>/shared/humphrys/shakespeare
+</pre>
+ 
+  </li><li> Rename  it to  gweb2.sh  
+ 
+
+</li></ol>
+<pre>  
+</pre>
+
+
+<h3>
+
+<img style="border:none" src="./Einstein - Search engine_files/new.gif">
+Update:
+<br>
+
+Stop now and check! 
+Do not go further if you have not persuaded Einstein to give you 40%.  <br>
+
+ You do not get marks if it works locally but not on Einstein.
+Only Einstein marks matter. <br>
+
+Do not go further until Einstein has given you 40%!
+
+</h3>
+
+
+<pre>
+</pre>
+
+<h1> 60% </h1>
+
+
+ The output looks a mess because it has HTML tags in it.
+
+
+
+<ol>
+<li> You need to   pipe the grep output  to 
+ a  "sed"  command       to   
+<a href="https://humphryscomputing.com/Notes/CGI/search.engine.html#escape.html">print the HTML  tags without interpreting them</a>.
+ 
+ 
+ 
+</li></ol>
+
+ 
+
+<pre>
+</pre>
+
+<h1> 80% </h1>
+
+
+ 
+ Now you need to  make the files clickable.
+
+<p>
+
+</p><ol> 
+<li>
+ The basic grep above  gives  output like this:
+<p>
+
+</p><blockquote>
+ <tt> file.html: hit </tt>
+</blockquote>
+
+<p>
+
+
+</p></li><li> We are going to pipe  the  grep  output to a 
+<a href="https://humphryscomputing.com/Notes/UNIX/functions.html">Shell function</a>
+ called "clickable",
+ which constructs      links to the files.
+<br>
+Start off by putting this shell function at the top of the script:
+
+<p>
+
+</p><div style=" border: 1px solid black; padding: 20px; display: inline-block; "> 
+<pre> 
+
+clickable()
+{
+ while read line
+ do 
+  echo "$line"
+ done
+}
+
+</pre>
+</div>
+
+<p>
+and pipe the above output to "clickable":
+</p><pre> grep ... | sed ... | clickable </pre>
+<p>
+
+
+</p></li><li> When that is working, we try to get "clickable" to separate the filename from the hit.
+ <br>
+
+See  <a href="https://humphryscomputing.com/Notes/UNIX/shell.utilities.html#cut.grep.output"> How to use cut to parse grep output</a>. 
+<br>
+The function will look like:
+<p>
+
+ 
+
+</p><div style=" border: 1px solid black; padding: 20px; display: inline-block; "> 
+<pre> 
+
+clickable()
+{
+ while read line
+ do
+  file=` echo "$line" | <b>[CUT BEFORE THE COLON]</b> `
+   hit=` echo "$line" | <b>[CUT AFTER THE COLON]</b>  `
+ 
+  echo "$file"
+  echo "$hit"
+ done
+}
+
+</pre>
+</div>
+<p>
+
+ You need to replace the <b>[CUT]</b> sections with the correct "cut" commands.
+</p><p>
+
+
+ </p></li><li> When that is working, we will construct the actual link.
+<br>
+The function will look like:
+<p>
+
+</p><div style=" border: 1px solid black; padding: 20px; display: inline-block; "> 
+<pre> 
+
+clickable()
+{
+ while read line
+ do
+  file=` echo "$line" | <b>[CUT BEFORE THE COLON]</b> `
+   hit=` echo "$line" | <b>[CUT AFTER THE COLON]</b>  `
+ 
+  echo "&lt;p&gt; &lt;a href='$file'&gt;$file&lt;/a&gt;: &lt;br&gt; $hit &lt;/p&gt;"
+ done
+}
+
+</pre>
+</div>
+<p>
+
+
+  
+</p></li><li> Stick to the pattern shown above (of a paragraph on one line) or Einstein will not like it.
+
+</li><li>
+  You can now click on   hits in the output page to see them (offline).
+</li></ol>
+
+
+
+<pre>
+</pre>
+
+<h1> 100% </h1>
+
+<ol>
+<li>
+But wait, clicking on the  link does not work. The link address is  wrong.
+<br>
+Recall where     the Shakespeare  pages are   on the student server.
+ Fix the address of  the links. 
+ <p>
+
+ 
+
+</p></li><li>  Now test it on the student server:
+<blockquote>
+<tt> gweb2  northumberland </tt>
+</blockquote>
+ will make an output file, showing  all lines in the corpus where "northumberland" appears in any case,
+where you can click on the hits to see the file.
+<p>
+  
+</p></li><li> Now recall  where     the Shakespeare  pages are    on  the  Einstein server.
+  Fix the address of  the links. 
+Upload to Einstein for marking.
+
+
+
+</li></ol>
+
+
+<pre>  
+</pre>
+ 
+
+
+
+<pre>
+</pre>
+ 
+</div> 
+
+
+
+<script src="./Einstein - Search engine_files/footer.js.download"></script>
+
+
+
+
+
+</body></html>

@@ -1,0 +1,115 @@
+
+
+
+/* --- styling for Ancient Brain ad ----------------------------------------------------- */
+
+
+html
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+
+	font-family:   Georgia, Verdana, "Times New Roman", Sans-serif; 
+ 	font-size: 16px;
+
+ 	background: rgba(238, 255, 255, 1.0);		/* blue */ 
+ 	color: black;
+}
+
+
+
+
+/* --- main div, canvas, text div ----------------------------------------------------- */
+
+
+#ancientbraindiv 
+{
+  	position: fixed;
+	top: 0;
+	left: 0;
+  	margin: 0;
+  	padding: 0;
+ 	cursor: pointer; 
+
+    	height: 100%;
+    	width: 100%;
+    	z-index: 1;
+}
+
+
+#ancientbraincanvas 
+{
+  	position: fixed;
+	top: 0;
+	left: 0;
+  	margin: 0;
+  	padding: 0;
+ 	cursor: pointer; 
+
+    	height: 100%;
+    	width: 100%;
+    	z-index: 2;
+}
+
+
+#ancientbraintext
+{
+  	position: fixed;
+ 	top: 0;
+	left: 0;
+ 	margin: 0;
+ 	padding: 20px;
+  	cursor: pointer; 
+
+	background: rgba(238, 255, 255, 0);		/* totally transparent */
+/*	background: rgba(169, 169, 169, 0); 	*/
+
+/*	position: absolute;
+	display: block; 
+*/
+	z-index: 100;
+
+	text-align: left;
+}
+ 
+
+
+
+
+/* --- text styling ----------------------------------------------------- */
+
+
+.ancientbrain-logo 
+{
+	 font-size: 25px;
+	 color:midnightblue   !important;  
+	 font-weight:bold; 
+	 font-family:Cooper Black,Bernard MT Condensed,Tw Cen MT,Georgia,Arial,verdana,century,arial narrow,impact,Tw Cen MT;
+}
+
+
+.ancientbrain-tagline 
+{
+	 font-size: 16px;
+	 color:darkcyan		 !important;  
+	 font-weight:bold;   
+	 font-family:Georgia,Tw Cen MT;	 
+}
+
+
+.ancientbrain-instruction 
+{
+	 font-size: 18px;
+	 color:midnightblue		 !important;  
+	 font-weight:bold;   
+	 font-family:Georgia,Tw Cen MT;	 
+}
+
+

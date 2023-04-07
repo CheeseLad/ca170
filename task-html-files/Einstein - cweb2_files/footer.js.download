@@ -1,0 +1,176 @@
+
+
+// any JS needed in footer 
+// after page has been drawn 
+
+
+
+
+
+
+
+//--- show and hide Notes --------------------------------------------------------------------------
+/*
+
+"Online" and "Regular" - two versions of the same notes  
+mark the notes in HTML 
+and selectively show and hide 
+Online / FutureLearn / no lectures v. Regular / lectures
+
+put this div on the page and you will get buttons:
+
+ 	<div id=longshortbuttons></div> 
+
+notes that are only in one version are marked in divs and spans like:
+
+ 	<div class=flnotes >
+ 	<div class=regularnotes >
+
+if notes used in both versions, no need to mark it 
+
+*/
+
+
+const longshortbuttons = `
+ 	<div style='margin:20; text-align: center;'>
+ 	<button class=normbutton id=theonlinebutton  onclick='showOnline();' 		>  FutureLearn </button>  
+ 	<button class=normbutton id=theregularbutton onclick='showRegular();' 		>  Normal lectures </button>  
+	</div>
+ `;
+
+function showOnline() 	
+{ 
+	$(".flnotes").show(); 
+	$(".regularnotes").hide(); 
+
+	$("#theonlinebutton").addClass("altbutton2"); 
+	$("#theonlinebutton").removeClass("normbutton");  
+
+	$("#theregularbutton").addClass("normbutton"); 
+	$("#theregularbutton").removeClass("altbutton2");  
+}
+
+function showRegular()  
+{ 
+	$(".flnotes").hide();
+ 	$(".regularnotes").show();
+
+	$("#theonlinebutton").addClass("normbutton"); 
+	$("#theonlinebutton").removeClass("altbutton2");  
+
+	$("#theregularbutton").addClass("altbutton2"); 
+	$("#theregularbutton").removeClass("normbutton");  
+}
+
+
+  
+
+
+
+
+//--- user-generated content (Wikipedia links) --------------------------------------------------------------------------
+
+// fix style for links to user-generated content, which may not be reliable 
+// wikipedia, google search, etc.
+// not a big problem if gets it wrong 
+
+
+function isUserContent ( href ) 
+{
+ var x = href.toLowerCase();		// convert all to lower case - makes matching easier 
+
+ if ( x.startsWith ( "http" ) )		// includes https 
+ {
+  if ( x.includes ( "ask.com" 		) ) return true;
+  if ( x.includes ( "bing.com" 		) ) return true;
+  if ( x.includes ( "duckduckgo" 	) ) return true;
+
+  if ( x.includes ( "books.google" 		) ) return false;
+  if ( x.includes ( "groups.google" 	) ) return false; 
+
+  if ( x.includes ( "google.com" 	) ) return true;
+  if ( x.includes ( "google.co.uk" 	) ) return true;
+  if ( x.includes ( "google.ie" 	) ) return true;
+
+  if ( x.includes ( "yahoo.com" 	) ) return true;
+  if ( x.includes ( "yahoo.co.uk" 	) ) return true;
+  if ( x.includes ( "yahoo.ie" 		) ) return true;
+
+  if ( x.includes ( "wikipedia.org" 	) ) return true;
+ }
+
+ return false;
+}
+
+
+function fixUserContentLinks()
+{
+  $("a").each ( function() 
+  {
+	if ( isUserContent ( this.href ) )							   
+		$(this).addClass ( "usercontent" ); 						  
+  });
+}
+
+
+
+
+
+
+//--- document ready --------------------------------------------------------------------------
+// this JS is at end, so probably could just execute code "now" 
+// but put it in "document ready" just in case 
+
+
+$(document).ready ( function()
+{
+
+
+
+
+//--- FutureLearn --------------------------------------------------------------------------
+/*
+
+if ( $("#longshortbuttons").length )
+{
+  	$("#longshortbuttons").html ( longshortbuttons );
+
+  	showOnline();
+
+  // easier for FL work to hide the "chrome"
+     $("#ancientbrain-div").hide();   
+     $("#footerbox").hide();   
+}
+
+*/
+
+
+//--- Regular notes --------------------------------------------------------------------------
+
+if ( $("#longshortbuttons").length )
+	showRegular();
+
+
+
+
+
+
+//--- user-generated content (Wikipedia links) --------------------------------------------------------------------------
+
+ 	fixUserContentLinks();
+
+
+//--- ad --------------------------------------------------------------------------
+// maybe need to tweak Ancient Brain ad size depending on entire content of page (scrollbars, etc.)
+
+  if ( typeof ancientbrain_setDimensions != 'undefined' ) 
+	ancientbrain_setDimensions();
+
+
+});
+
+
+
+
+
+

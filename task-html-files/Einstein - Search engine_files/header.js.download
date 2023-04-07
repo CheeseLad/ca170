@@ -1,0 +1,27 @@
+
+ 
+
+// any JS needed at top 
+
+
+
+// Stop this being put in a frame 
+
+if (top != self)
+ top.location.href = self.location.href;
+
+
+
+// to add icons to my site
+// need to put this in head on every page:
+// <link rel="icon"  href="favicon.ico" >
+
+// lazy way is to use JS to do it
+// use absolute address since JS is called at many levels 
+
+
+	const ICON_LINE = " <link rel='icon' href='https://humphryscomputing.com/favicon.ico' > ";
+
+	document.head.insertAdjacentHTML ( "beforeend", ICON_LINE );
+
+

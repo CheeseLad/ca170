@@ -1,0 +1,440 @@
+
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> Einstein - simple Shell scripts </title>
+
+<link rel="stylesheet" type="text/css" href="./Einstein - simple Shell scripts_files/main.css">
+ <link rel="icon" href="https://humphryscomputing.com/favicon.ico"> </head>
+
+<body>
+
+<script src="./Einstein - simple Shell scripts_files/jquery.min.js(1).download"></script>
+<script src="./Einstein - simple Shell scripts_files/header.js.download"></script>
+
+
+
+
+
+
+
+<!-- 
+Header with Three.js show
+For most normal pages
+--> 
+
+
+
+
+<!-- 
+three.js for header show
+--> 
+
+<script src="./Einstein - simple Shell scripts_files/r80.three.min.js(1).download"></script>  
+
+
+
+ 
+
+
+<div id="headerbox">
+
+<center>
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tbody><tr>
+<td valign="center">
+
+
+<center>
+
+ <font size="+3"><b>
+
+<a href="https://humphryscomputing.com/" style="text-decoration:none">
+<font color="black">Dr. Mark Humphrys</font>
+</a>
+
+ </b></font>
+
+<p>
+
+School of Computing.
+Dublin City University.
+</p><p>
+
+
+<a class="main-navigation" href="https://humphryscomputing.com/">Home</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<a class="main-navigation" href="https://humphryscomputing.com/blog.html">Blog</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a class="main-navigation" href="https://humphryscomputing.com/teaching.html">Teaching</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a class="main-navigation" href="https://humphryscomputing.com/research.html">Research</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a class="main-navigation" href="https://humphryscomputing.com/contact.html">Contact</a>
+  
+</p><p>
+
+  Online coding site: 
+<a href="https://ancientbrain.com/"><img style="border:none; vertical-align: middle;" width="30" src="./Einstein - simple Shell scripts_files/ab.logo.png"></a> 
+
+<a class="main-navigation" href="https://ancientbrain.com/">Ancient Brain</a>
+</p><p>
+
+
+
+
+
+<!--
+Live remote stats  
+-->
+
+<script src="./Einstein - simple Shell scripts_files/feed.nousers.js.download"></script>1,927 
+coders  
+
+&nbsp;
+
+<script src="./Einstein - simple Shell scripts_files/feed.noworlds.js.download"></script>7,570 
+JavaScript worlds
+
+
+
+
+
+</p></center>
+
+</td>
+
+
+
+
+
+
+
+<td valign="top">
+
+<center>
+
+ 
+<!--
+
+ title="Tiled floor at my great-granduncle's pub (now 'The Oak'), Dame St, Dublin"
+
+<A  HREF=https://humphryscomputing.com/><img style=border:none   width=150   src="https://humphryscomputing.com/Icons/logo.1.jpg"></A>
+
+-->
+
+
+  <div id="headershowdiv">
+    <canvas width="125" height="125" style="width: 125px; height: 125px;"></canvas></div>
+  
+<script src="./Einstein - simple Shell scripts_files/header.show.js.download"></script>
+
+</center>
+
+</td>
+
+
+
+
+
+
+<td valign="center">
+<center>
+
+
+
+<form method="GET" action="https://humphryscomputing.com/search.php">  
+Search: 
+ <input size="20" name="q"> 
+ <input type="submit" value="Search"> 
+</form> 
+
+
+<p>
+
+
+<a class="main-navigation" href="https://humphryscomputing.com/ca170/">CA170</a>   &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="main-navigation" href="https://humphryscomputing.com/ca318/">CA318</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="main-navigation" href="https://humphryscomputing.com/ca686/">CA686</a>   &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="main-navigation" href="https://humphryscomputing.com/ca686i/">CA686I</a> 
+</p><p>
+
+<a class="main-navigation" href="https://humphryscomputing.com/courses/ai.html">Online AI coding exercises</a>
+</p><p>
+ 
+<a class="main-navigation" href="https://humphryscomputing.com/projects.html">Project ideas</a>
+
+
+
+</p></center>
+
+</td>
+
+
+</tr></tbody></table>
+
+</center>
+
+</div>
+
+
+ 
+
+
+
+
+<div class="NOPRINT">
+
+
+
+<style>
+
+#ancientbrain-div {		
+
+/* div on page to go below header box 			*/
+/* styled to exactly match and line up with header box 	*/
+
+ 	background: rgba(238, 255, 255, 1.0);
+ 	color: black;
+	text-align: center;	/* center content */ 
+
+	max-width: 1510px;	/* to match header box 1500 plus padding 5 */ 
+   	padding: 0;
+
+  	margin: 20 auto 10 auto;                         /* top right bottom left */		  
+   	border: 2px solid black ;		
+}
+
+
+#ancientbrain-iframe {		/* iframe fills div */
+
+ 	width: 	900 ; 		/* default, later set by JS */
+	height:	200 ;	 		 
+
+	margin: auto; 		/* center iframe */
+
+	border: none;
+   /*	border: 2px solid black ; */
+}
+
+</style>
+
+  
+<div id="ancientbrain-div">
+<iframe id="ancientbrain-iframe" scrolling="no" src="./Einstein - simple Shell scripts_files/ad.html" style="width: 1510px; height: 200px;"></iframe>
+</div>
+ 
+
+
+<script>
+
+// optional dimensions tweaking
+// width and height of iframe are fairly flexible 
+// height should be at most width/4 (height can be less than that)
+
+function ancientbrain_setDimensions()
+{
+	var iframe 	= document.getElementById('ancientbrain-iframe');
+	var parent 	= iframe.parentElement;
+	var w		= parent.clientWidth;
+
+ 	iframe.style.width  = w ;		// fills div  
+
+	if ( w > 1000 ) iframe.style.height = 200 ;		// max-height 200 
+	else		iframe.style.height = w * 0.2 ;	 	 
+}
+
+ancientbrain_setDimensions();
+
+window.addEventListener ( "resize", 		ancientbrain_setDimensions );
+window.addEventListener ( "orientationchange",	ancientbrain_setDimensions );
+
+</script>
+
+
+
+
+
+
+
+</div>
+
+ 
+
+
+
+<div id="boxinpage">
+
+
+
+<br>
+
+ 
+
+
+
+<h1> Einstein - simple Shell scripts </h1>
+
+Upload the following   scripts to Einstein until you  pass all the tests.
+<p>
+
+ Scripts must use the names below.
+
+
+
+
+</p><pre>
+
+</pre>
+ 
+ 
+
+
+
+<ol>
+ 
+
+  <li> ls2.sh
+<ul>
+  <li>
+List   files  ending in ".txt"   in current directory.
+ Long format.
+
+ 
+
+</li></ul>
+<p>
+
+
+
+</p><pre>
+</pre>
+
+
+
+  </li><li> peekpass.sh
+<ul>
+  <li>     Display  contents of   
+  <a href="https://en.wikipedia.org/wiki/Passwd#Password_file" class="usercontent"> Password   file</a>.
+ 
+
+</li></ul>
+<p>
+<br>
+
+</p><div style=" background-color:#ffffcc;  border: 1px solid black; padding: 20px; display: inline-block; "> 
+
+<h3> Note on password file </h3>
+
+(Not needed to do practical.)
+<p>
+
+
+The 
+  <a href="https://en.wikipedia.org/wiki/Passwd#Password_file" class="usercontent"> password   file</a>
+may not contain a list of all users.
+<br>
+See also the <a href="https://en.wikipedia.org/wiki/Getent" class="usercontent">getent</a> command.
+</p><pre> getent passwd </pre>
+
+</div>
+
+
+
+<pre>
+</pre>
+
+
+
+
+
+  </li><li> grep2.sh
+<ul>
+ 
+<li> Write a script to search for a string in a file.
+</li><li> The string is   "queen" in lower case. 
+</li><li> The file is the play Macbeth:
+<pre> /users/tutors/mhumphrysdculab/share/shakespeare/macbeth/complete.html </pre>
+
+</li><li> There should be 4 hits.
+
+</li><li> Once you are happy it is working, change the filename   to
+ <pre> macbeth.htm </pre> 
+(with no directory in front of it) and upload it.
+  
+ 
+</li></ul>
+<p>
+
+</p><pre>
+</pre>
+
+
+  </li><li> grep3.sh
+<ul>
+  <li> Same as above except    script is to print   lines      containing   "queen", 
+<i>ignoring case</i>.
+ 
+</li></ul>
+<p>
+
+</p><pre>
+</pre>
+
+  </li><li> alldir.sh
+<ul>
+  <li>       List  all directories underneath
+<a href="https://en.wikipedia.org/wiki/Unix_filesystem#Conventional_directory_layout" class="usercontent">/etc</a>
+
+</li><li> Use "find".   
+
+
+</li></ul>
+<p>
+
+
+
+<!--
+
+  <li> name.sh
+<ul>
+  <li>   Script 
+</ul>
+<p>
+
+-->
+
+
+
+
+</p></li></ol>
+
+<pre>  
+
+</pre>
+
+
+</div>
+
+   
+
+
+
+
+
+<script src="./Einstein - simple Shell scripts_files/footer.js.download"></script>
+
+
+
+
+
+
+</body></html>
