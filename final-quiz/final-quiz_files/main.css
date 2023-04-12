@@ -1,0 +1,695 @@
+
+
+ 
+
+body
+{
+ font-size: 16px;
+ font-family:   Georgia, Verdana, "Times New Roman", Sans-serif; 
+
+  	background:    no-repeat center center fixed; 
+	background-size: cover;
+
+ 	background-color: white;
+ 	color: black;
+
+}
+
+
+
+pre 
+{
+	font-family:   Courier New, Courier; 
+	font-size: 14px;
+	overflow-x: auto;		/* automatic horizontal scroll needed for mobile if <pre> section is wide */
+}
+
+
+tt
+{
+	font-family:   Courier New, Courier; 
+	font-size: 14px;
+}
+
+
+
+
+/* Ancient Brain text */
+
+.logo-text 
+{
+	 font-size: 25px;
+	 color:midnightblue;  
+	 font-weight:bold; 
+	 font-family:Cooper Black,Bernard MT Condensed,Tw Cen MT,Georgia,Arial,verdana,century,arial narrow,impact,Tw Cen MT;
+}
+
+
+.tagline-text 
+{
+	 font-size: 16px;
+	 color:darkcyan;  
+	 font-weight:bold;   
+	 font-family:Georgia,Tw Cen MT;	 
+}
+
+ 
+
+
+/* 
+--- <a links --------------------
+links in blue, no underline, whether visited or not
+underline appears when hover
+don't use just "a" because that also styles "<a name>" 
+*/
+
+
+a:link, a:visited  {
+  color: navy ;
+  font-weight: bold ;
+  text-decoration: none ;
+}
+
+a:link:hover,  a:visited:hover   {
+  text-decoration: underline ;
+  text-decoration-skip-ink: none;		  
+}
+
+
+
+
+/* mark links to user-generated content */
+
+a.usercontent {
+ color: red;
+}
+
+
+a.structural
+{
+  font-weight: bold ;
+ color: darkred !important;
+ font-size: larger !important;
+}
+
+
+
+/* normal underlined links */
+/* text-decoration-skip-ink: none  - do not break underline when it encounters descenders like g, j, q, p, y */
+
+/*
+
+a:link {
+  color: #0000cc ;
+  text-decoration: underline ;
+text-decoration-skip-ink: none;		
+}
+
+a:visited, a:active, a:focus {
+  color: purple ;
+  text-decoration: underline ;
+text-decoration-skip-ink: none;	 
+}
+
+*/
+
+
+
+
+
+/*
+main navigation links
+only underline when hover
+*/
+
+
+a.main-navigation:link {
+  color: navy ;
+  font-weight: bold ;
+  font-family:Arial,Verdana,Sans-serif;
+  text-decoration: none ;
+}
+
+a.main-navigation:visited, a.main-navigation:active, a.main-navigation:focus {
+  color: navy ;
+  font-weight: bold ;
+  font-family:Arial,Verdana,Sans-serif;
+  text-decoration: none ;
+}
+
+a.main-navigation:hover    {
+  color: navy ;
+  font-weight: bold ;
+  font-family:Arial,Verdana,Sans-serif;
+  text-decoration: underline ;
+  text-decoration-skip-ink: none;		  
+}
+
+
+
+
+
+
+
+
+/*
+
+border on all images by default
+don't do this - too much maths in my AI notes
+
+
+img {
+ border: 1px solid black ;
+}
+
+*/
+
+
+
+
+
+/* 
+ border on linked images  
+*/
+
+
+a:link img {
+ border: 2px solid #0000cc
+}
+
+a:visited img, a:active img, a:focus img {
+ border: 2px solid purple
+}
+
+
+
+
+   
+/* highlight link to section on page */
+
+:target 
+{
+ 	border: 1px solid silver;
+  	background-color: #ffffcc;
+}
+
+
+ 
+
+
+
+/* 
+
+these boxes are ids (one per page)
+
+	<div id="name">	
+
+*/
+
+
+#wholepage {
+
+ 	background-color:#ffffcc;
+ 	color: black;
+
+	max-width: 1500px;			/* blog type page */ 
+	margin: 50 auto; 				/* center it on page  */
+	text-align: left; 	 
+
+   	border: 2px solid black ;		
+   	padding: 40px;
+
+    	z-index: 20;
+
+	}
+
+
+#headerbox  {
+
+ 	background: rgba(238, 255, 255, 1.0);
+ 	color: black;
+
+	max-width: 1500px;			  
+	margin: 10 auto;   	 		 
+	text-align: left; 	 
+
+   	border: 2px solid black ;		
+   	padding: 5px;
+
+    	z-index: 20;
+
+	}
+
+
+
+#controlsbox  {
+
+ 	background: rgba(255, 255, 255, 0.9);
+/* 	background: rgba(255, 255, 204, 1.0); */
+
+ 	color: black;
+
+	max-width: 1480px;			  
+	margin: 10 auto;   	 		 
+	text-align: left; 	 
+
+   	border: 2px solid black ;		
+   	padding: 15px;
+
+    	z-index: 20;
+
+	}
+
+
+#footerbox  {
+
+ 	background: rgba(255, 255, 255, 0.7);
+/* 	background: rgba(255, 255, 255, 1.0); */
+
+ 	color: black;
+
+	max-width: 1200px;			  
+	margin: 10 auto;   	 		 
+	text-align: left; 	 
+
+   	border: 2px solid black ;		
+   	padding: 40px;
+
+    	z-index: 20;
+
+	}
+
+
+
+#boxinpage {
+
+ 	background-color:white;
+ 	color: black;
+
+	max-width: 1200px;			  
+	margin: 50 auto;   	 		 
+	text-align: left; 	 
+
+   	border: 2px solid black ;		
+   	padding: 40px;
+
+    	z-index: 20;
+
+	}
+   	
+
+/* multiple per page */
+
+div.boxinpageclass 
+{
+ 	background-color:white;
+ 	color: black;
+
+	max-width: 1200px;			  
+	margin: 50 auto;   	 		 
+	text-align: left; 	 
+
+   	border: 2px solid black ;		
+   	padding: 40px;
+
+    	z-index: 20;
+}
+
+
+
+
+ 
+/* 
+
+can be multiple ones of these per page 
+
+	<div class="name">	
+
+*/
+ 
+
+div.mulbox {					 
+
+ 	background-color:white;
+ 	color: black;
+
+   	border: 2px solid black ;		
+   	padding: 40px;
+
+	max-width: 1200px;			  
+	margin: 20 auto;   	 		 
+
+	text-align: left; 	 
+    	z-index: 20;
+	}
+
+
+
+
+ 
+div.longwordbox {
+
+ 	background-color:white;
+ 	color: black;
+
+    	width: 800;
+    	word-wrap: break-word;
+
+   	border: 1px solid black ;
+   	padding: 15px;
+}
+
+
+
+
+
+/*
+To do three.js background div:
+
+base div (one per page):
+ 	<div id="wrapper">
+
+full page three.js scene (one per page):
+  	<div id="threecanvas">
+
+div to float on top of it (one per page):
+  	<div id="threepage">
+
+multiple divs to go on top:  
+ 	<div class="threebox">
+*/
+
+
+
+/*
+ we sit them on top of a wrapper
+ and then we can do (position fixed, relative) relative to wrapper 
+ http://stackoverflow.com/questions/16688545/scroll-div-over-another-div
+*/
+
+
+#wrapper  {				 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#threecanvas {					 
+
+    	position: fixed;		/* will not scroll */ 
+    	height: 100%;
+    	width: 100%;
+
+	z-index: -1 ;		/* in background - can put divs in front of it  */ 
+ 
+/*
+      min-height: 100%;
+	margin: 0 auto; 			 
+   	border: none ;		
+   	padding: 0px;
+    	top: 0 ;
+    	left: 0 ;
+*/
+	}
+
+
+   	 
+#threepage {			  
+
+ 	background: rgba(255, 255, 255, 0);		/* transparent */ 
+
+      position: relative;		/* will scroll */ 
+      height: 100%;
+    	width: 100%;
+
+    	z-index: 10;
+   
+/*
+   	border: none ;		
+   	padding: 0;
+     	position: absolute;
+    	top: 0 ;
+*/
+	}
+   	 
+
+div.threebox {			 
+
+ 	background-color:white;
+ 	color: black;
+
+   	border: 2px solid black ;		
+   	padding: 40px;
+
+      position: relative;
+
+	max-width: 1200px;			  
+	margin: 100 auto;   	 		 
+
+	text-align: left; 	 
+    	z-index: 20;
+	}
+
+ 
+
+
+
+/* table of notes */ 
+
+table.notestable   tr  
+{ 
+	vertical-align: top;
+ 	background-color: white ;	/* white */
+}	
+
+table.notestable   tr:hover   
+{ 
+ 	background-color: #ffffcc ;	/* yellow */ 
+}	
+
+
+
+
+/* table with some optional notes */ 	
+/* normal lines: */
+
+table.optable   tr  
+{ 
+	vertical-align: top;
+ 	background-color: white ;	/* white */
+}	
+
+table.optable   tr:hover   
+{ 
+ 	background-color: #ffffcc ;		/* yellow */ 
+/* 	background-color: #eeeeee ; */	/* grey */ 
+}	
+
+
+/* optional lines: */
+
+table.optable   tr.optional  
+{ 
+	vertical-align: top;
+ 	background-color: #ccffcc  ;	/* green */
+}	
+
+table.optable   tr.optional:hover   
+{ 
+ 	background-color: #ffffcc ;		/* yellow */ 
+/* 	background-color: #aaffaa ; */	/* darker green */
+}	
+
+
+
+
+
+/*
+ part of text on a line inside a box
+ <span class=box>
+*/
+
+
+span.box 
+{
+ border: 1px solid black;
+ padding: 5px;
+}
+
+
+div.box 
+{
+ border: 1px solid black;
+ padding: 10px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+/* display: inline-block;	*/		/* div to fit width of content - div will not have line breaks before and after */ 	 
+}
+
+
+
+/* nice box with hover effect */ 
+
+div.hoverbox
+{
+ border: 1px solid black;
+ padding: 30px;
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+
+div.hoverbox:hover   
+{ 
+ 	background-color: #ffffcc ;	/* yellow */ 
+}	
+
+
+
+/* FL notes and regular notes */
+
+div.flnotes
+{ 
+	padding: 20; 
+	border: 1px solid black; 
+ /*	background-color: #ffffcc ;	 */
+}	
+
+
+
+
+
+/* button with hover effect */
+
+.normbutton {
+ 	padding: 3px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+     	color: white;
+   	background-color: black;		 
+}
+
+.normbutton:hover {
+	color: white;		 
+   	background-color: darkcyan;  	 
+}
+
+
+.warnbutton {
+ 	padding: 3px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+     	color: white;
+   	background-color: darkred;
+}
+
+.warnbutton:hover {
+	color: white;
+   	background-color: red;
+}
+
+
+
+/* greyed out button */ 
+/* does nothing when hover */ 
+
+.greybutton 
+{
+ 	padding: 3px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+     	color: white;
+   	background-color: dimgray;
+}
+
+
+
+.altbutton 
+{
+ 	padding: 3px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+     	color: black;
+ 	background-color: #ffffcc; 
+}
+
+.altbutton:hover 
+{
+     	color: black;
+ 	 background-color: #ffff88; 
+}
+
+  
+/* no hover effect */
+
+.altbutton2 
+{
+ 	padding: 3px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+     	color: black;
+ 	background-color: #ffffcc; 
+}
+
+
+
+
+/* flex display */
+ 
+.flex-container 
+{
+	display: flex;
+	flex-direction: row;
+  	flex-wrap: wrap;
+
+ 	justify-content:  center;	 
+ 	align-items: flex-start;			/* div contents aligned to top */ 
+}
+
+
+/* any div inside a flex-container */
+
+.flex-container>div 
+{
+  	margin: 30 ;		/* top right bottom left */ 
+ 	border: 1px solid silver;
+  	padding: 20;
+  	text-align: left;
+}
+
+
+
+
+
+/* 
+=========== noprint ==========================================================
+
+print will exclude segments marked with: 
+ <DIV class=NOPRINT> 
+*/
+
+.noprint     {}
+
+@media print {               
+  .noprint {display: none}           
+  }
+
+
+
+
+
+/* 
+=========== page break in print ==================================================
+
+<h1 class="newpage">
+
+*/
+
+
+.newpage { page-break-before: always; }
+
+
+
+
+
